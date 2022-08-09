@@ -1,0 +1,50 @@
+<div class="container">
+    <h1>Equipment</h1>
+    <hr />
+    
+    <div class="input-group rounded">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" (keyup)="searchEquipment($event)"  />
+      
+    </div>
+    
+    <br><br>
+
+    <table mat-table [dataSource]="dataSource" matSort class="table table-hover mat-elevation-z8" style="color: black;">
+
+        <ng-container matColumnDef="Equipment Name">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Equipment Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.Equipment_Name}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Purchase Date">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Purchase Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.Purchase_Date}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="update">
+            <th mat-header-cell *matHeaderCellDef> Update </th>
+            <td mat-cell *matCellDef="let element">
+                <button type="button" class="btn btn-sm btn-info" (click)="editEquipment(element)" data-toggle="modal"
+                data-target="#addModal"> Update
+                </button>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="delete">
+            <th mat-header-cell *matHeaderCellDef> Delete </th>
+            <td mat-cell *matCellDef="let element">
+                <button type="button" class="btn btn-sm btn-danger" (click)="getID(element.Equipment_ID)">Delete</button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+      
+        <td></td>
+        
+      <div class="container text-center">
+        <button type="submit" class="btn btn-default" a routerLink="/addEquipment">Add Equipment</button>
+      </div>
+    </div>
+
+    

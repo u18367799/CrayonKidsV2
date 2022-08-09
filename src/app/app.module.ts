@@ -41,6 +41,11 @@ import { AddParentDetailsComponent } from './parent/add-parent-details/add-paren
 import { AddStudentDetailsComponent } from './student/add-student-details/add-student-details.component';
 import { StudentComponent } from './student/student/student.component';
 import { AddClassTypeComponent } from './class-type/add-class-type/add-class-type.component';
+import { SupplierComponent } from './supplier/supplier.component';
+import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.component';
+import { EquipmentComponent } from './equipment/equipment.component';
+import { BookLunchComponent } from './book-lunch/book-lunch.component';
+import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +65,12 @@ import { AddClassTypeComponent } from './class-type/add-class-type/add-class-typ
     AddParentDetailsComponent,
     AddStudentDetailsComponent,
     StudentComponent,
-    AddClassTypeComponent
+    AddClassTypeComponent,
+    SupplierComponent,
+    AddSupplierComponent,
+    EquipmentComponent,
+    BookLunchComponent,
+    AddEquipmentComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,54 @@
+<main class="main">
+
+    <mat-card>
+      <header>
+        <mat-card-title>
+          <span class="material-icons">person</span> Add Equipment
+        </mat-card-title>
+      </header>
+    
+  <mat-card-content>
+  <form [formGroup]="equipmentForm" class="form-inline" (ngSubmit)="onSubmit()">
+    <br><br>
+    
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-form-field>  
+          <label for="name">Equipment Name:</label>
+          <br>
+          <input type="text" name="Name" [(ngModel)]="equipmentData.Equipment_Name" class="form-control" formControlName="Name"> <br>
+          <small *ngIf="equipmentForm.get('Name').invalid && equipmentForm.get('Name').touched" class="text-danger">Name is required</small>
+  
+        </mat-form-field> 
+       </div>
+
+    </div>
+  
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-form-field>  
+         <label for="PurchaseDate">Purchase Date:</label>   
+          <br>
+         <input type="date" name="PurchaseDate" [(ngModel)]="equipmentData.Purchase_Date" class="form-control" formControlName="PurchaseDate"> <br>
+         <small *ngIf="equipmentForm.get('PurchaseDate').invalid && equipmentForm.get('PurchaseDate').touched" class="text-danger">Purchase Date is required</small>
+        </mat-form-field>
+      </div> 
+    </div>
+
+  
+  
+
+  <br>
+    <div class="addButton">
+      <button type="submit" class="btn btn-success" >Add Equipment</button>
+    </div>
+  
+    </form>
+  </mat-card-content>
+  </mat-card>
+  </main>
+
+  
+  
+  
+  

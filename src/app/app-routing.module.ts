@@ -15,6 +15,10 @@ import { AddParentDetailsComponent } from './parent/add-parent-details/add-paren
 import { AddStudentDetailsComponent } from './student/add-student-details/add-student-details.component';
 import { ClassTypeComponent } from './class-type/class-type.component';
 import { AddClassTypeComponent } from './class-type/add-class-type/add-class-type.component';
+import { SupplierComponent } from './supplier/supplier.component';
+import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.component';
+import { EquipmentComponent } from './equipment/equipment.component';
+import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.component';
 
 const routes: Routes = [
   {path: 'assessmentList', component:AssessmentsComponent},
@@ -32,6 +36,10 @@ const routes: Routes = [
   {path: 'addstudentdetails', component: AddStudentDetailsComponent},
   {path: 'classtypelist', component: ClassTypeComponent},
   {path: 'addclasstype', component: AddClassTypeComponent},
+  {path: 'supplierList', component: SupplierComponent},
+  {path: 'addSupplier', component: AddSupplierComponent},
+  {path: 'equipmentList', component: EquipmentComponent},
+  {path: 'addEquipment', component: AddEquipmentComponent},
 
   
 

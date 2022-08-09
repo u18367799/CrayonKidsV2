@@ -1,0 +1,110 @@
+<main class="main">
+
+    <mat-card>
+      <header>
+        <mat-card-title>
+          <span class="material-icons">person</span> Add Supplier
+        </mat-card-title>
+      </header>
+    
+  <mat-card-content>
+  <form [formGroup]="supplierForm" class="form-inline" (ngSubmit)="onSubmit()">
+    <br><br>
+    
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-form-field>  
+          <label for="name">Name:</label>
+          <br>
+          <input type="text" name="Name" [(ngModel)]="supplierData.SupplierName" class="form-control" formControlName="Name"> <br>
+          <small *ngIf="supplierForm.get('Name').invalid && supplierForm.get('Name').touched" class="text-danger">Name is required</small>
+  
+        </mat-form-field> 
+       </div>
+  
+      <div class="col-lg-6">
+        <mat-form-field>  
+          <label for="email">Email address:</label>
+          <br>
+          <input type="email" name="Email" [(ngModel)]="supplierData.Supplier_Email" class="form-control" formControlName="Email"> <br>
+          <small *ngIf="supplierForm.get('Email').invalid && supplierForm.get('Email').touched" class="text-danger">Email is required</small>
+        </mat-form-field>
+      </div>
+
+      <div class="col-lg-6">
+        <mat-form-field>  
+          <label for="ContactNo">Contact Number:</label>
+          <br>
+          <input type="text" name="ContactNo" [(ngModel)]="supplierData.Supplier_Phone" class="form-control" formControlName="ContactNo"> <br>
+          <small *ngIf="supplierForm.get('ContactNo').invalid && supplierForm.get('ContactNo').touched" class="text-danger">Contact No is required</small>
+        </mat-form-field>
+      </div>
+
+
+    </div>
+  
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-form-field>  
+         <label for="streetAddress">Street Address:</label>   
+          <br>
+         <input type="text" name="StreetAddress" [(ngModel)]="supplierData.Supplier_Street_Address" class="form-control" formControlName="StreetAddress"> <br>
+         <small *ngIf="supplierForm.get('StreetAddress').invalid && supplierForm.get('StreetAddress').touched" class="text-danger">Street Address is required</small>
+        </mat-form-field>
+      </div> 
+
+      <div class="col-lg-6">
+        <mat-form-field>  
+         <label for="Address2">Address Line 2:</label>   
+          <br>
+         <input type="text" name="Address2" [(ngModel)]="supplierData.Supplier_Address_2" class="form-control" formControlName="Address2"> <br>
+         <small *ngIf="supplierForm.get('Address2').invalid && supplierForm.get('Address2').touched" class="text-danger">Address Line 2 is required</small>
+        </mat-form-field>
+      </div>
+
+      <div class="col-lg-6">
+        <mat-form-field>  
+         <label for="City">City:</label>   
+          <br>
+         <input type="text" name="City" [(ngModel)]="supplierData.Supplier_City" class="form-control" formControlName="City"> <br>
+         <small *ngIf="supplierForm.get('City').invalid && supplierForm.get('City').touched" class="text-danger">City is required</small>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <mat-form-field>  
+             <label for="Province">Province:</label>   
+              <br>
+             <input type="text" name="Province" [(ngModel)]="supplierData.Supplier_Province" class="form-control" formControlName="Province"> <br>
+             <small *ngIf="supplierForm.get('Province').invalid && supplierForm.get('Province').touched" class="text-danger">Province is required</small>
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-6">
+            <mat-form-field>  
+             <label for="PostalCode">Postal Code:</label>   
+              <br>
+             <input type="text" name="PostalCode" [(ngModel)]="supplierData.Supplier_Postal_Code" class="form-control" formControlName="PostalCode"> <br>
+             <small *ngIf="supplierForm.get('PostalCode').invalid && supplierForm.get('PostalCode').touched" class="text-danger">Postal Code is required</small>
+            </mat-form-field>
+          </div>
+    </div>
+  
+  
+
+  <br>
+    <div class="addButton">
+      <button type="submit" class="btn btn-success" >Add Supplier</button>
+    </div>
+  
+    </form>
+  </mat-card-content>
+  </mat-card>
+  </main>
+
+  
+  
+  
+  
