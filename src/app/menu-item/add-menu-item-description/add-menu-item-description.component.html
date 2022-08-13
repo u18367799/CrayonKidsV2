@@ -1,0 +1,50 @@
+<main class="main">
+
+    <mat-card>
+      <header>
+        <mat-card-title>
+          <span class="material-icons">menu</span> Add menu item
+        </mat-card-title>
+      </header>
+    
+  <mat-card-content>
+  <form [formGroup]="menuitemForm" class="form-inline" (ngSubmit)="onSubmit()">
+    <br><br>
+    <!-- <div class="row">
+      <div class="container text-center">
+        <mat-form-field appearance="fill">
+          <mat-label>parent Type</mat-label>
+          <mat-select formControlName="parentType" required>
+            <mat-option>Administrator</mat-option>`
+  
+            <mat-option>Teacher</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>      
+    </div> -->
+    
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-form-field>  
+          <label for="name">Menu Item Description:</label>
+          <br>
+          <input type="text" name="Menu_Item_Description" [(ngModel)]="menuitemData.Menu_Item_Description" class="form-control" formControlName="Menu_Item_Description"> <br>
+          <small *ngIf="menuitemForm.get('Menu_Item_Description').invalid && menuitemForm.get('Menu_Item_Description').touched" class="text-danger">Description is required</small>
+  
+        </mat-form-field> 
+       </div>  
+
+  <br>
+    <div class="addButton">
+      <button type="submit" class="btn btn-success" >Add menu item</button>
+    </div>
+  
+    </form>
+  </mat-card-content>
+  </mat-card>
+  </main>
+
+  
+  
+  
+  

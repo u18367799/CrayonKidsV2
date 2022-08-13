@@ -46,6 +46,11 @@ import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.compo
 import { EquipmentComponent } from './equipment/equipment.component';
 import { BookLunchComponent } from './book-lunch/book-lunch.component';
 import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.component';
+import { AddMenuDescriptionComponent } from './menu/add-menu-description/add-menu-description.component';
+import { AddMenuComponent } from './menu/add-menu/add-menu.component';
+import { MenuComponent } from './menu/menu.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
+import { AddMenuItemDescriptionComponent } from './menu/add-menu-item-description/add-menu-item-description.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +76,11 @@ import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.c
     EquipmentComponent,
     BookLunchComponent,
     AddEquipmentComponent,
+    AddMenuDescriptionComponent,
+    AddMenuComponent,
+    MenuComponent,
+    MenuItemComponent,
+    AddMenuItemDescriptionComponent,
   ],
   imports: [
     BrowserModule,
