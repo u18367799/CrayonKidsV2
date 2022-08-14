@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,6 +46,7 @@ import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.compo
 import { EquipmentComponent } from './equipment/equipment.component';
 import { BookLunchComponent } from './book-lunch/book-lunch.component';
 import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.component';
+import { UploadPopComponent } from './upload-pop/upload-pop.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.c
     EquipmentComponent,
     BookLunchComponent,
     AddEquipmentComponent,
+    UploadPopComponent,
   ],
   imports: [
     BrowserModule,
@@ -95,7 +97,7 @@ import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.c
     MatNativeDateModule,
     HttpClientModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
   ],
   exports: [
     MatInputModule,
@@ -104,5 +106,6 @@ import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.c
 ],
   providers: [EmployeeService],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

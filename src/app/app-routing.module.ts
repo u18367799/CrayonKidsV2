@@ -19,6 +19,7 @@ import { SupplierComponent } from './supplier/supplier.component';
 import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.component';
+import { UploadPopComponent } from './upload-pop/upload-pop.component';
 
 const routes: Routes = [
   {path: 'assessmentList', component:AssessmentsComponent},
@@ -40,6 +41,8 @@ const routes: Routes = [
   {path: 'addSupplier', component: AddSupplierComponent},
   {path: 'equipmentList', component: EquipmentComponent},
   {path: 'addEquipment', component: AddEquipmentComponent},
+  {path: 'uploadPOP', component: UploadPopComponent},
+
 
   
 
