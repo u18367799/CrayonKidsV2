@@ -20,6 +20,11 @@ import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.compo
 import { EquipmentComponent } from './equipment/equipment.component';
 import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.component';
 import { UploadPopComponent } from './upload-pop/upload-pop.component';
+import { AddMenuDescriptionComponent } from './menu/add-menu-description/add-menu-description.component';
+import { MenuComponent } from './menu/menu.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
+import { AddMenuItemDescriptionComponent } from './menu-item/add-menu-item-description/add-menu-item-description.component';
+
 
 const routes: Routes = [
   {path: 'assessmentList', component:AssessmentsComponent},
@@ -42,7 +47,10 @@ const routes: Routes = [
   {path: 'equipmentList', component: EquipmentComponent},
   {path: 'addEquipment', component: AddEquipmentComponent},
   {path: 'uploadPOP', component: UploadPopComponent},
-
+  {path: 'addmenu', component: AddMenuDescriptionComponent},
+  {path: 'menulist', component: MenuComponent},
+  {path: 'menuItemlist', component: MenuItemComponent},
+  {path: 'addmenuItem', component: AddMenuItemDescriptionComponent},
 
   
 

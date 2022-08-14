@@ -47,6 +47,9 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { BookLunchComponent } from './book-lunch/book-lunch.component';
 import { AddEquipmentComponent } from './equipment/add-equipment/add-equipment.component';
 import { UploadPopComponent } from './upload-pop/upload-pop.component';
+import { AddMenuDescriptionComponent } from './menu/add-menu-description/add-menu-description.component';
+import { MenuComponent } from './menu/menu.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +76,9 @@ import { UploadPopComponent } from './upload-pop/upload-pop.component';
     BookLunchComponent,
     AddEquipmentComponent,
     UploadPopComponent,
+    AddMenuDescriptionComponent,
+    MenuComponent,
+    MenuItemComponent,
   ],
   imports: [
     BrowserModule,
